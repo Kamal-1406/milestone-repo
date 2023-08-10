@@ -1,0 +1,591 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* center container */
+.flex1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* space between conntainer */
+.flex2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* column center  */
+.flex3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* navbar starts here */
+.navbar {
+    height: 100px;
+    justify-content: space-evenly;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+
+/* brand name */
+.brand-name {
+    font-weight: bold;
+    font-size: 40px;
+    color: #fff;
+}
+
+/* main links */
+.main-menu {
+    /* background-color: black; */
+    width: 30%;
+}
+
+.main-menu ul {
+    justify-content: space-evenly;
+}
+
+.menu-icon {
+    font-size: 40px;
+    display: none;
+}
+
+.main-menu ul li {
+    list-style-type: none;
+    padding: 15px 0;
+}
+
+.main-menu ul li:hover {
+    border-top: 2px solid #23A6F0;
+    border-bottom: 2px solid #23A6F0;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.main-menu ul li a:hover {
+    color: #23A6F0;
+}
+
+.button {
+    background-color: #23A6F0;
+    height: 50px;
+    width: 180px;
+    border-radius: 5px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #23A6F0;
+    border: 2px solid #23A6F0;
+}
+
+/* navbar ends */
+/* hero section  */
+.hero-section {
+    background-image: url(./assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    text-transform: capitalize;
+    position: relative;
+    top: -100px;
+    padding-top: 50px;
+    z-index: -1;
+}
+
+/* content part1 */
+.content-part1>div {
+    flex-direction: column;
+    color: #fff;
+}
+
+.content-part1>div>h1 {
+    font-size: 50px;
+    word-spacing: 20px;
+}
+
+.content-part1>div>p {
+    font-size: 20px;
+    margin: 20px 0;
+    color: rgb(200, 195, 195);
+}
+
+.btn-1,.btn-2 {
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    background-color: #23A6F0;
+    margin: 20px 10px;
+}
+
+/* form section */
+.content-part2 {
+    /* background-color: greenyellow; */
+    text-transform: capitalize;
+    margin-top: 50px;
+}
+
+.form-container {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+form {
+    padding-top: 20px;
+    width: 90%;
+}
+
+.text-space {
+    align-items: start;
+    margin-top: 10px;
+}
+
+input {
+    height: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: rgb(235, 233, 233);
+}
+
+select {
+    height: 50px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: grey;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: rgb(233, 228, 228);
+}
+
+input[type="submit"] {
+    background-color: #23A6F0;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+input[type="submit"]:hover {
+    background-color: #fff;
+    color: #23A6F0;
+}
+
+.text-space label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* leading medicines part */
+.lead-medicine1 {
+    height: 100vh;
+    margin-bottom: 70px;
+}
+.heading h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    /* color: #fff; */
+}
+
+.heading p {
+    font-size: 20px;
+    /* background-color: green; */
+    text-align: center;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    gap: 50px;
+    margin-top: 100px;
+    /* background-color: blueviolet; */
+}
+
+.card {
+    /* background-color: red; */
+    border-radius: 10px;
+    height: 360px;
+    justify-content: space-between;
+    border: 2px solid #23A6F0;
+}
+.head {
+    height: 100px;
+    width: 100%;
+    background-color: #23A6F0;
+    border-radius: 5px 5px 0 0;
+}
+.head h1 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.icon {
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.points {
+    align-items: flex-start;
+    /* background-color: #ea4545; */
+    width: 80%;
+    
+}
+.points p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: rgb(149, 149, 149);
+}
+.card h2 {
+    color: #23A6F0;
+    align-self: flex-start;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+/* lead medicine part2 */
+.lead-medicine2 {
+    margin-bottom: 50px;
+    background-color: rgb(230, 229, 229);
+    padding: 30px 0;
+    height: 100vh;
+}
+.cards-prt2 {
+    /* background-color: blue; */
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    /* border-radius: 10px; */
+    gap: 30px;
+}
+.card-prt2 {
+    background-color: #fff;
+    height: 200px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 30px;
+}
+.user-img {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    border-radius: 50%;
+}
+.user-img img {
+    width: 100%;
+}
+/* FAQ SECTION */
+
+.faq-items {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.faq-item {
+    /* background-color: aquamarine; */
+    height: 200px;
+}
+
+.discription {
+    /* background-color: red; */
+    justify-content: space-between;
+    height: 100px
+}
+
+.discription>p:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.arw {
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-right: 10px;
+    /* background-color: blue; */
+    padding-top: 40px;
+}
+
+/* pricing section */
+.pricing {
+    /* background-color: aqua; */
+    margin: 50px 0;
+}
+
+.price-cards {
+    /* background-color: green; */
+    height: 600px;
+    width: 300px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    justify-content: space-evenly;
+    border: 2px solid #23A6F0;
+}
+.price-cards:hover{
+    background-color: #252B42;
+    color: white;
+    height: 625px;
+    margin-bottom: 20px;
+}
+.price-cards h1 {
+    font-size: 3rem;
+}
+
+.price-cards p {
+    font-size: 18px;
+}
+
+.price h1, h2,
+h3 {
+    color: #23A6F0;
+}
+
+.month {
+    margin-left: 10px;
+}
+
+.dollar>div {
+    /* background-color:aqua ; */
+    align-self: flex-start;
+}
+
+.benifits-lists {
+    /* background-color: violet; */
+    align-items: flex-start;
+}
+
+.benifits-row {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.benifits-row i {
+    margin-right: 10px;
+}
+
+.all-pricing-cards {
+    margin-top: 50px;
+    gap: 2px;
+}
+
+/* black card */
+div.black-card {
+    background-color: black;
+    color: white;
+    height: 625px;
+    margin-bottom: 20px;
+}
+
+/* get in touch section */
+.get-in-touch {
+    background-color: #252B42;
+    color: #fff;
+    height: 50vh;
+    padding: 0 50px;
+}
+
+.text-part {
+    align-items: flex-start;
+    /* background-color: green; */
+    padding: 0 30px;
+}
+
+.text-part h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.text-part p {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+input[value="subscribe"] {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    width: 20%;
+}
+
+input[placeholder="your email"] {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding-left: 10px;
+}
+
+.subscribe-input {
+    margin: 0 40px;
+}
+
+/* footer */
+.footer {
+    /* background-color: aqua; */
+    height: 50vh;
+    text-transform: capitalize;
+}
+.upar-footer {
+    /* background-color: red; */
+    height: 80%;
+    width: 80%;
+    grid-template-columns: repeat(4, 1fr);
+padding: 20px;
+}
+
+.first-col {
+    align-items: flex-start;
+    margin-bottom: 50px;
+    /* background-color: #fff; */
+}
+
+.first-col h1 {
+    text-transform: capitalize;
+    /* align-items: flex-start; */
+}
+/* .same-col{
+    background-color: #fff;
+    
+} */
+.first-col p {
+    font-size: 20px;
+    align-items: flex-start;
+}
+
+.social-media {
+    justify-content: flex-start;
+}
+
+.social-media i {
+    font-size: 20px;
+    margin-right: 10px;
+    /* justify-content: flex-start; */
+}
+
+
+
+
+/* responsive design  */
+@media screen and (max-width:1024px) {
+   /* navbar */
+    .main-menu ul,.b{
+        display: none;
+    }
+    .menu-icon{
+        margin-left: 120px;
+        display: block;
+    }
+    .main-menu{
+        order: 5;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+/* main section */
+    .hero-section{
+        grid-template-columns: 1fr;
+margin-bottom: 50px;
+    }
+    .content-part2{
+        margin-top: 0;
+    }
+    /* leading mechicne1 */
+    .lead-medicine1{
+    margin-top: 20px;
+    }
+    .cards{
+        margin-top: 10px;
+        grid-template-columns: 320px;
+    }
+    /* leading medicine2 */
+    .lead-medicine2{
+        margin: 10px;
+    }
+    .cards-prt2{
+        grid-template-columns: 300px;
+    }
+    /* faq */
+    .faq-items{
+        grid-template-columns: repeat(2,300px);
+    }
+    /* pricing */
+    .all-pricing-cards{
+        grid-template-columns: 300px;
+    }
+    .price-cards{
+        margin-top: 20px;
+    }
+    /* get in touch */
+    .get-in-touch{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    /* footer */
+    .footer{
+        height: 100vh;
+        position: relative;
+        left: 50px;
+    }
+    .upar-footer{
+        grid-template-columns: 1fr;
+        margin-bottom: 10px;
+    }
+}

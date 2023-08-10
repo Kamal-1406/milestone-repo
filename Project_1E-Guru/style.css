@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* :root{
+
+} */
+.flex1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* navigation bar */
+.navbar {
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+
+}
+
+/* logo part */
+.e-guru-logo {
+    height: 50px;
+}
+
+.name {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+
+/* logo parts end */
+
+
+/* list */
+.links ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: 600 ;
+}
+
+.links li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.links li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+}
+
+.links li a:hover {
+    color: #FF5202;
+}
+
+.menu-icon {
+    display: none;
+    height: 60px;
+    width: 60px;
+}
+
+/* list ends */
+
+
+/* sign-up button */
+.sign-up .button {
+    background-color: #fff;
+    height: 50px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    width: 150px;
+    font-weight: 600;
+    border: 2px solid black;
+}
+
+.sign-up .button:hover {
+    border: none;
+    background-color: orange;
+    color: white;
+}
+
+.sign-up .button:active {
+    background-color: #FF5202;
+    color: white;
+}
+
+.user-profile {
+    display: none;
+    height: 80px;
+    width: 80px;
+}
+
+/* .sign-up button ends */
+
+/* hero section */
+/* text part of hero section */
+.content-part1 {
+    align-items: start;
+    flex-direction: column;
+}
+
+.content-part1 h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.content-sec-line {
+    margin: 20px 0;
+}
+
+.line {
+    height: 60px;
+    width: 1px;
+    border: 2px solid rgb(52, 50, 50);
+    margin-right: 10px;
+}
+
+.para {
+    color: rgb(61, 61, 61);
+    font-size: 20px;
+}
+
+.btns {
+    flex-wrap: wrap;
+    height: 150px;
+    margin: 30px 0;
+}
+
+.btns img {
+    align-self: flex-end;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+.button-1 {
+    align-self: flex-start;
+    background-color: #fff;
+    height: 50px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    width:30%;
+    border: 2px solid black;
+}
+
+.button-2 {
+    align-self: flex-start;
+    margin-left: 10px;
+    background-color: #fff;
+    height: 50px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    width: 30%;
+    border: 2px solid black;
+}
+
+.button-1:hover,
+.button-2:hover {
+    background-color: #FF5202;
+    color: white;
+}
+
+.button-1:active,
+.button-2:active {
+    border: none;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 60px 0;
+    flex-wrap: wrap;
+}
+
+/* image part of hero section */
+.content-part2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* uppar orange arrow */
+.upper-part .side-part {
+    /* background-color: blue; */
+    align-self: flex-start;
+    margin-right: 20px;
+}
+
+.lower-part {
+   
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 10%;
+    transform: rotate(-15deg);
+}
+
+.boy-img {
+    position: relative;
+    width: 100%;
+    animation: scale 1s linear .25s infinite alternate;
+}
+/* @keyframes scale{
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.25,1.25);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+
+} */
+
+.one {
+    text-align: center;
+}
+
+.two img {
+    position: absolute;
+    top: 29px;
+    left: 78px;
+    width: 300px;
+}
+
+.three img {
+    /* width: 30%; */
+    position: absolute;
+    top: -30px;
+    left: -4px;
+    animation: jiggle 1s ease-in-out 0.5s infinite alternate;
+}
+/* @keyframes jiggle{
+    0%{
+     transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+} */
+
+/* footer */
+.ftr {
+    height: 50vh;
+    background-color: #262543;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+
+}
+.first-col {
+    /* margin-top:0px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.first-col>h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    /* background-color: #fff; */
+    margin-top: 5px;
+}
+.first-col>p {
+    margin-top: 5px;
+    color: gray;
+   
+}
+.same-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-right: 50px;
+}
+
+.same-h1 {
+    text-transform: uppercase;
+}
+
+.same-p {
+    color: gray;
+}
+
+.other-col {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center; 
+    /* gap: 10px; */
+    align-items: center;
+    /* background-color: #fff; */
+}
+
+.img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.expert {
+    background-color: #1CD7AF;
+}
+
+.online {
+    background-color: #FC5B11;
+}
+
+.support {
+    background-color: #525BF1;
+}
+@media screen and (max-width:1280px){
+    .other-col{
+        grid-template-columns: repeat(2,1fr);
+    }   
+}
+
+@media screen and (max-width:1024px) {
+    .sign-up .user-profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sign-up .button,
+    .links ul {
+        display: none;
+    }
+
+    .links .menu-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sign-up {
+        order: 3;
+    }
+
+    .e-guru-logo {
+        order: 1;
+    }
+
+    .links .menu-icon {
+        order: 2;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-part2 {
+        position: relative;
+        bottom: 160px;
+        left: -5px;
+    }
+
+    .btns {
+        position: relative;
+        top: 575px;
+        left: 25px;
+        z-index: 1;
+        text-align: center;
+    }
+    .other-col{
+        grid-template-columns:1fr;
+    }  
+}
+
+@media screen and (max-width:768px) {
+
+    .ftr {
+        height: auto;
+        margin-top: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .other-col {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .same-col {
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
